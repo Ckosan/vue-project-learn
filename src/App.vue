@@ -1,17 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--    <div>-->
+    <!--      <Farther></Farther>-->
+    <!--    </div>-->
+    <!--      <ChildOne></ChildOne>-->
+    <!--      <router-view></router-view>-->
+    <br>
+    <ul>
+      <li>
+        <router-link to="/">Hello</router-link>
+      </li>
+      <li>
+        <router-link to="/hello">HelloWorld</router-link>
+      </li>
+      <li>
+        <router-link to="/farther">farther</router-link>
+      </li>
+    </ul>
+    <router-view></router-view>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Farther from "@/components/Farther"
+// import ChildOne from "@/components/ChildOne";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // Farther,
+    // ChildOne
   }
 }
 </script>
